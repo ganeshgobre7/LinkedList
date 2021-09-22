@@ -31,6 +31,24 @@ namespace LinkedList
             Console.WriteLine("Insered Element in Linked list is :" + node.data);
         }
         /// <summary>
+        /// Method to Adding Element at First Position in LL
+        /// </summary>
+        /// <param name="data"></param>
+        public void InsertAtFirst(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                node.next = head;
+                this.head = node;
+            }
+            Console.WriteLine("After inserting Node at first Position :" + data);
+        }
+        /// <summary>
         /// Method to Display the Element in LL
         /// </summary>
         public void Display()
