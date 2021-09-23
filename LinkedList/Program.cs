@@ -10,7 +10,9 @@ namespace LinkedList
 
             LinkedList list = new LinkedList();//creating object of LL class to store the element
             list.Add(56);
+            list.Display();
             list.Add(30);
+            list.Display();
             list.Add(70);
             list.Display();
             Console.WriteLine("***************************************");
@@ -20,11 +22,15 @@ namespace LinkedList
             list.InsertAtLast(56);
             list.Display();
             Console.WriteLine("***************************************");
-            list.InsertAtMiddle(2,30);
+            list.InsertAtMiddle(2, 30);
             list.Display();
             Console.WriteLine("***************************************");
             list.DeleteFirst();
             list.Display();
+            Console.WriteLine("***************************************");
+            list.DeleteLast();
+            list.Display();
+
         }
     }
 }

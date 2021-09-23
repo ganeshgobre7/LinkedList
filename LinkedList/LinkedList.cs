@@ -111,6 +111,28 @@ namespace LinkedList
             head = head.next;
             Console.WriteLine("After deleting First node :");
         }
+
+        /// <summary>
+        /// Method to Delete the Last Element
+        /// </summary>
+        public void DeleteLast()
+        {
+            Node temp =head;
+            if (this.head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                while (temp.next.next!= null) 
+                {
+                    temp = temp.next;                   
+                }
+                temp.next = null;
+                Console.WriteLine("After deleting Last node :");
+            }
+        }
+        
         /// <summary>
         /// Method to Display the Element in LL
         /// </summary>
