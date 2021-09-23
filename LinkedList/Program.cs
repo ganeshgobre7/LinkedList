@@ -19,6 +19,9 @@ namespace LinkedList
             Console.WriteLine("***************************************");
             list.InsertAtLast(56);
             list.Display();
+            Console.WriteLine("***************************************");
+            list.InsertAtMiddle(2,30);
+            list.Display();
         }
     }
 }
