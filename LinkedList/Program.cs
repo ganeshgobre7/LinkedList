@@ -22,6 +22,9 @@ namespace LinkedList
             Console.WriteLine("***************************************");
             list.InsertAtMiddle(2,30);
             list.Display();
+            Console.WriteLine("***************************************");
+            list.DeleteFirst();
+            list.Display();
         }
     }
 }

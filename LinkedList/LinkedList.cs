@@ -71,7 +71,7 @@ namespace LinkedList
             Console.WriteLine("After inserting at last position : " + data);
         }
         /// <summary>
-        /// Method to Adding Elment between to Element
+        /// Method to Adding Elment between two Element
         /// </summary>
         /// <param name="position"></param>
         /// <param name="data"></param>
@@ -98,6 +98,18 @@ namespace LinkedList
                 temp.next = node;
             }
             Console.WriteLine("After inserting at middle between 56 & 70 : " + data);
+        }
+        /// <summary>
+        /// Method to Deleting First Element in LL
+        /// </summary>
+        public void DeleteFirst()
+        {
+            if (this.head ==null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            head = head.next;
+            Console.WriteLine("After deleting First node :");
         }
         /// <summary>
         /// Method to Display the Element in LL
