@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LinkedList
 {
@@ -55,14 +53,14 @@ namespace LinkedList
         public void InsertAtLast(int data)
         {
             Node node = new Node(data);
-            if(this.head==null)
+            if (this.head == null)
             {
                 this.head = node;
             }
             else
             {
                 Node temp = head;
-                while(temp.next!=null)
+                while (temp.next != null)
                 {
                     temp = temp.next;
                 }
@@ -104,7 +102,7 @@ namespace LinkedList
         /// </summary>
         public void DeleteFirst()
         {
-            if (this.head ==null)
+            if (this.head == null)
             {
                 Console.WriteLine("List is Empty");
             }
@@ -117,22 +115,50 @@ namespace LinkedList
         /// </summary>
         public void DeleteLast()
         {
-            Node temp =head;
+            Node temp = head;
             if (this.head == null)
             {
                 Console.WriteLine("List is Empty");
             }
             else
             {
-                while (temp.next.next!= null) 
+                while (temp.next.next != null)
                 {
-                    temp = temp.next;                   
+                    temp = temp.next;
                 }
                 temp.next = null;
                 Console.WriteLine("After deleting Last node :");
             }
         }
-        
+        /// <summary>
+        /// Method to Search Element in LL
+        /// </summary>
+        /// <param name="dataSearch"></param>
+        public void searchElement(int dataSearch)
+        {
+            Boolean flag = false;
+            Node temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    if (temp.data == dataSearch)
+                    {
+                        flag = true;
+                        break;
+                    }
+                    temp = head.next;
+                }
+            }
+            if (flag)
+                Console.WriteLine(dataSearch + " : " +"Element Found");
+            else
+                Console.WriteLine(dataSearch + "Element  Not Found");
+        }
         /// <summary>
         /// Method to Display the Element in LL
         /// </summary>

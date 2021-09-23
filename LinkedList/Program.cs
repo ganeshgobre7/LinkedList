@@ -30,7 +30,8 @@ namespace LinkedList
             Console.WriteLine("***************************************");
             list.DeleteLast();
             list.Display();
-
+            Console.WriteLine("***************************************");
+            list.searchElement(30);
         }
     }
 }
