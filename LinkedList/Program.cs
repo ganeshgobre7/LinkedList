@@ -16,6 +16,9 @@ namespace LinkedList
             Console.WriteLine("***************************************");
             list.InsertAtFirst(70);
             list.Display();
+            Console.WriteLine("***************************************");
+            list.InsertAtLast(56);
+            list.Display();
         }
     }
 }

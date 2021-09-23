@@ -48,6 +48,25 @@ namespace LinkedList
             }
             Console.WriteLine("After inserting Node at first Position :" + data);
         }
+
+        public void InsertAtLast(int data)
+        {
+            Node node = new Node(data);
+            if(this.head==null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while(temp.next!=null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
+            }
+            Console.WriteLine("After inserting at last position : " + data);
+        }
         /// <summary>
         /// Method to Display the Element in LL
         /// </summary>
